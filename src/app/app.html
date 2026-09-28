@@ -1,5 +1,7 @@
-@for (task of taskList(); track task.name) {
-  <app-task [task]="task" (checkboxValue)="updateTaskValue($event)" />
-}
+<nav>
+  <a routerLink="/">Inicio</a>
+</nav>
 
-<button (click)="consolePrint()">Consola</button>
+<hr>
+
+<router-outlet></router-outlet>
